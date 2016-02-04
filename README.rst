@@ -23,6 +23,8 @@ REQUIREMENTS
 TYPICAL USAGE
 =============
 
+::
+
     import pyat.sync
     import time
 
@@ -56,7 +58,7 @@ TYPICAL USAGE
             except pyat.sync.NotExecutedYet:
                 # A bit too early
                 pass
-                
+
 STATUS
 ======
 
