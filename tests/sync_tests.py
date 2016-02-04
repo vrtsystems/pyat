@@ -86,7 +86,7 @@ def test_future_exception():
     try:
         (run_at, run_args, run_kwargs) = task.result
         assert False, 'Did not fail'
-    except FailedTaskException, e:
+    except FailedTaskException as e:
         (msg, run_at, run_args, run_kwargs) = e.args
         assert run_args == args, 'args does not match'
         assert run_kwargs == kwargs, 'kwargs does not match'
