@@ -34,7 +34,7 @@ class SynchronousTaskScheduler(TaskScheduler):
 
     def _next(self):
         with self._pending_lk:
-            if self._pending[0]._at_time > time.time():
+            if self._pending[0].at_time > time.time():
                 raise IndexError('Not yet pending')
             return heapq.heappop(self._pending)
 
@@ -92,7 +92,14 @@ class SynchronousScheduledTask(ScheduledTask):
         Return true if this task's scheduled time is less than time of the
         one given.
         '''
-        return self._at_time < other._at_time
+        return self.at_time < other.at_time
+
+    @property
+    def at_time(self):
+        '''
+        Return the time this task is due to be executed.
+        '''
+        return self._at_time
 
     @property
     def cancelled(self):
