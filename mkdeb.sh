@@ -31,7 +31,7 @@ eval $( sed -ne '1 {
 
 # Split apart the Debian package version
 DEB_PKGVERSION=${DEB_VERSION#*-}
-DEB_BASEVERSION=${DEB_VERSION%${DEB_PKGVERSION}-}
+DEB_BASEVERSION=${DEB_VERSION%-${DEB_PKGVERSION}}
 
 # Retrieve the Python package name and version from setup.py
 PY_PKGNAME=$( ${PYTHON} ${MY_DIR}/setup.py --name )
