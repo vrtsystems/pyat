@@ -1,0 +1,30 @@
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "pyat"
+dynamic = ["version"]
+dependencies = ["six"]
+
+[project.readme]
+file = "README.rst"
+content-type = "text/prs.fallenstein.rst"
+
+[[project.authors]]
+name = "Stuart Longland"
+email = "stuartl@vrt.com.au"
+
+[tool.black]
+line-length = 78
+
+[tool.pytest.ini_options]
+log_cli = true
+
+[tool.setuptools]
+packages = [
+	"pyat",
+]
+
+[tool.setuptools.dynamic]
+version = {attr = "pyat.__version__"}

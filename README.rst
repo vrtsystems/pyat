@@ -1,11 +1,6 @@
 pyat
 ====
 
-.. image:: https://travis-ci.org/vrtsystems/pyat.svg?branch=master
-    :target: https://travis-ci.org/vrtsystems/pyat
-.. image:: https://coveralls.io/repos/vrtsystems/pyat/badge.svg?branch=master&service=github
-    :target: https://coveralls.io/github/vrtsystems/pyat?branch=master
-
 `pyat` is the Python analogue of the Unix `at` daemon, it runs tasks at
 specified times, optionally providing a means to pass around results and
 exceptions.
