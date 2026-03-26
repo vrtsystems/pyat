@@ -1,3 +1,7 @@
+pyat (0.0.2) unstable; urgency=low
+  * Re-package for modern Python
+ -- Stuart Longland <stuartl@vrt.com.au>  Fri, 27 Mar 2026 09:39:15 +1000
+
 pyat (0.0.1) unstable; urgency=low
   * Initial release
  -- Stuart Longland <stuartl@vrt.com.au>  Thu, 04 Feb 2016 14:25:00 +1000
