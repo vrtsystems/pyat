@@ -9,7 +9,7 @@ dependencies = ["six"]
 
 [project.readme]
 file = "README.rst"
-content-type = "text/prs.fallenstein.rst"
+content-type = "text/x-rst"
 
 [[project.authors]]
 name = "Stuart Longland"
